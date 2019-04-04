@@ -83,10 +83,11 @@ public class ThirdPartActivity extends AppCompatActivity{
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(ThirdPartActivity.this, MainActivity.class);
-                        intent.putExtra("packageName",bean.mPackageName);
-                        intent.putExtra("appName",bean.nName);
-                        startActivity(intent);
+//                        Intent intent = new Intent(ThirdPartActivity.this, MainActivity.class);
+//                        intent.putExtra("packageName",bean.mPackageName);
+//                        intent.putExtra("appName",bean.nName);
+//                        startActivity(intent);
+                        NotificationsUtils.jumpToAPPDetailInfo(ThirdPartActivity.this, 11, bean.mPackageName);
                     }
                 });
             }
